@@ -1,0 +1,172 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+body{
+    font-size: 20px;
+    overflow-x: hidden;
+    color: #fff;
+    font-family: 'Flamenco', cursive;
+    overflow-y: scroll;
+  
+
+}
+html
+{
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('../images/aromalogo.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.pic1
+{
+    border-radius: 25px;
+    opacity: 0.85;
+    margin-top: 25px;
+    margin-left:20px;
+    height: 200px;
+    position: absolute;
+    top: 40%;
+    left: 71%;
+    width: 350px;
+    font-weight: lighter;
+    margin-bottom: 40px;
+}
+h2{
+    font-size: 180%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    width: 1180px;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    transform: translate(-20%, 0);
+}
+p{
+    font-size:120%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-top: 150px;
+    position: absolute;
+    top: 25%;
+    left: 4%;
+    width: 980px;
+    font-weight: lighter;
+    margin-bottom: 40px;
+
+}
+.animate
+{
+    animation: colorchange 1s infinite;
+}
+@keyframes colorchange{
+    0%{color: red;}
+    25%{color: blueviolet;}
+    50%{color:white;}
+    100%{color:blueviolet;}
+
+}
+
+.clearfix:after
+{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+.rows
+{
+    margin: 0 auto;
+    max-width: 1180px;
+
+}
+.logo
+{height: 120px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+    margin-left: 50px;
+    
+}
+.main-nav
+{
+    float: right;
+    margin-top: 60px;
+}
+.main-nav li
+{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+    
+}
+.main-nav li a
+{
+    margin-right: 40px;
+    color: #fff;
+    padding: 5px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100;
+    
+}
+.main-nav li a:hover
+{
+    border-bottom: 2px solid blueviolet;
+
+}
+.mobile-icon{display: none;}
+@media only screen  and (max-width: 1180px)
+{
+    .main-content-header
+    {
+    width: 100%;
+    padding: 0 2%;
+    }
+}
+@media only screen  and (max-width: 998px)
+{
+    h1{font-size: 200%;}
+}
+@media only screen  and (max-width: 768px)
+{
+    h1{font-size: 180%;}
+    .main-nav{
+    display:none ;
+    }
+    .mobile-icon{
+        display: inline-block;
+        color:  #fff;
+        float:  right;
+        margin-top: 30px;
+        margin-right: 20px;
+
+
+    }
+    .main-nav{float: left;}
+    .main-nav li{
+        
+        display:block;
+        margin-top: 10px;
+    }
+
+}
+@media only screen  and (max-width: 480px)
+{
+    .btn-full
+    {
+        margin-bottom: 20px;
+    }
+    h1{
+        font-size: 160%;
+    }
+
+}
